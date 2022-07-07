@@ -12,6 +12,13 @@ public class TwoSum
         System.out.println(twoSum(new int[] {2,7,11,15}, 9));
     }
 
+    /**
+     * The concept is we will check the difference number between the target and current iterating number
+     * If exist then return
+     * @param nums
+     * @param target
+     * @return
+     */
     public static int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> foundMap = new HashMap<>();
         int[] result = new int[2];

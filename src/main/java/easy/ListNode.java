@@ -1,9 +1,9 @@
-package easy.datastructure;
+package easy;
 
 public class ListNode {
     int val;
     ListNode next;
-    public ListNode() {
+    ListNode() {
     }
 
     ListNode(int val) {

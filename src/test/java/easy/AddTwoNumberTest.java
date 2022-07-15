@@ -57,4 +57,23 @@ public class AddTwoNumberTest {
         Assert.assertEquals(1, result.next.next.next.next.next.next.next.val);
     }
 
+    @Test
+    public void fail1() {
+        ListNode l1 = new ListNode(2);
+        l1.next = new ListNode(4);
+        l1.next.next = new ListNode(9);
+
+        ListNode l2 = new ListNode(5);
+        l2.next = new ListNode(6);
+        l2.next.next = new ListNode(4);
+        l2.next.next.next = new ListNode(9);
+
+        ListNode result = AddTwoNumber.addTwoNumbers(l1, l2);
+        Assert.assertEquals(7, result.val);
+        Assert.assertEquals(0, result.next.val);
+        Assert.assertEquals(4, result.next.next.val);
+        Assert.assertEquals(0, result.next.next.next.val);
+        Assert.assertEquals(1, result.next.next.next.next.val);
+    }
+
 }
